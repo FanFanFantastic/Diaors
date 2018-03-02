@@ -1,0 +1,22 @@
+{
+  "name": "diaors",
+  "version": "1.0.0",
+  "description": "Forum App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"  
+  },
+    "dependencies":{
+        "express":"*",
+        "body-parser":"*",
+        "mongoose":"*",
+        "bcryptjs":"*",
+        "cors":"*",
+        "jsonwebtoken":"*",
+        "passport":"*",
+        "passport-jwt":"*"
+    },
+  "author": "Jiongming Fan",
+  "license": "ISC"
+}
