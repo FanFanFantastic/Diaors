@@ -8,8 +8,16 @@ var config = require("./config/database");
 
 
 mongoose.connect(config.database);
+
+//Database Connect
 mongoose.connection.on("connected",()=>{
     console.log("connected to database"+config.database);
+
+});
+
+//Database Error
+mongoose.connection.on("error",(error)=>{
+    console.log("Database Error:"+error);
 
 });
 
@@ -36,7 +44,14 @@ app.use(express.static(path.join(__dirname,'public')));
 app.use(bodyParser.json());
 //app.use(bodyParser.urlencoded({extended:false}));
 
-//
+//passport Middleware
+app.use(passport.initialize());
+app.use(passport.session());
+
+require('./config/passport') (passport);
+
+
+
 app.use('/users',users);
 
 

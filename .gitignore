@@ -1,2 +1,7 @@
 node_modules/
 
+
+
+diaors/node_modules/
+diaors/www
+.DS_Store
