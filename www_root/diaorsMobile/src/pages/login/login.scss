@@ -1,0 +1,54 @@
+page-login {
+    .background {
+        //background-image:url('../assets/img/bg.jpg');
+        background-image:  url('../assets/imgs/bg.jpg');
+    }
+
+    .scroll-content{
+        align-content: center;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        text-align:center;
+
+    }
+
+    ion-card.card{
+        background: rgba(0,0,0,0.5);
+        box-shadow: none;
+        border-radius:5px;
+        max-width: 400px;
+        margin: auto !important;
+    }
+
+    a,ion-card-header.card-header{
+        color:#fff;
+    }
+
+    // .list > .item-block .item-inner{
+    //     border:medium none;
+    // }
+
+
+    .item {
+        margin-bottom:10px;
+        background: rgba(255,255,255,0.5);
+        border: medium none !important;
+
+        .text-input
+        {
+            color:#fff;
+        }
+
+        ::placeholder { /* Most modern browsers support this now. */
+            color:    #fff;
+         }
+    }
+
+    .button-outline:hover
+    {
+        background: rgba(20, 150, 236, 0.5) !important;
+    }
+
+
+}

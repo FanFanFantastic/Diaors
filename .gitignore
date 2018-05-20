@@ -2,6 +2,8 @@ node_modules/
 
 
 
-diaors/node_modules/
-diaors/www
+diaors/www_root\diaorsMobile\node_modules
+diaors/www_root\diaorsWeb\node_modules
+
+
 .DS_Store
