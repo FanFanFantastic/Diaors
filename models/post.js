@@ -1,9 +1,11 @@
 const mongoose = require('mongoose');
 
-var post = mongoose.model('post', {
-    text: { type: String },
+var Post = mongoose.model('Post', {
+    title: { type: String },
+    body: { type: String },
+    likes: { type: Number }, 
     created_by: { type: String },
-    created_at: {type: Date, default: Date.now}
-});
+    created_at: { type: Date, default: Date.now }
+},'posts');
 
-module.exports = { post };
+module.exports = { Post };

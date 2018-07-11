@@ -6,6 +6,7 @@ var passport = require('passport');
 var mongoose = require('mongoose');
 var config = require("./config/database");
 
+/** Database Setup**/
 
 mongoose.connect(config.database);
 
@@ -21,10 +22,15 @@ mongoose.connection.on("error",(error)=>{
 
 });
 
+
+
+
+
 var app = express();
 
 //Route config
 var users = require('./routes/users');
+var post = require('./routes/postController');
 
 var port = 3000;
 
@@ -53,6 +59,7 @@ require('./config/passport') (passport);
 
 
 app.use('/users',users);
+app.use('/post',post)
 
 
 app.get('/',(req,res)=>{
